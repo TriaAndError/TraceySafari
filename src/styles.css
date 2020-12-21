@@ -2,3 +2,13 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: mulish;
+    src: url(./assets/Mulish/static/Mulish-Black.ttf);
+}
+
+@font-face {
+    font-family: mulish-lite;
+    src: url(./assets/Mulish/Mulish-VariableFont_wght.ttf);
+}
