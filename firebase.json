@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "traceysafari",
+    "public": "dist/TraceySafari",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

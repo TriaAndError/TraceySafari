@@ -1,0 +1,39 @@
+mat-toolbar {
+  background-color: white
+}
+mat-toolbar-row {
+  height: 110px;
+}
+.pageLink {
+  margin-right: 25px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #202336;
+
+}
+.signup_button {
+  background: #FB8F1D;
+  border-radius: 8px;
+  margin-right: 128px;
+  width: 100px;
+  /*top: 43px;*/
+}
+.login_button {
+  border: 1px solid #FB8F1D;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 50px;
+  width: 100px;
+/*top: 43px;*/
+
+  background-color: #ffffff;
+
+  color: #FB8F1D;
+
+  mix-blend-mode: normal;
+
+}

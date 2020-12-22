@@ -1,0 +1,15 @@
+
+.footer {
+	width: 100%;
+	background-color: #F9F9FB;
+	height: 40vh;
+	display: flex;
+	padding: 15px;
+	bottom: 0;
+}
+
+.footer div {
+	width: 25%;
+	padding: 15px;
+}
+
