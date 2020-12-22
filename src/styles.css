@@ -1,15 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-<<<<<<< HEAD
 
-
-body { 
-
-	margin: 0; 
-	font-family: Roboto, "Helvetica Neue", sans-serif; 
-	padding: 0;
-=======
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 @font-face {
@@ -20,5 +12,4 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @font-face {
     font-family: mulish-lite;
     src: url(./assets/Mulish/Mulish-VariableFont_wght.ttf);
->>>>>>> dba5ba5d259c89856eb4cf30939c5c2576164e86
 }

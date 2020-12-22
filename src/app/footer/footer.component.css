@@ -1,20 +1,4 @@
-<<<<<<< HEAD
 
-.footer {
-	width: 100%;
-	background-color: #F9F9FB;
-	height: 40vh;
-	display: flex;
-	padding: 15px;
-	bottom: 0;
-}
-
-.footer div {
-	width: 25%;
-	padding: 15px;
-}
-
-=======
 .footer {
     background-color: #F9F9FB;
     width: 100%;
@@ -111,4 +95,4 @@
 .footer-social svg:hover {
     opacity: 1;
 }
->>>>>>> dba5ba5d259c89856eb4cf30939c5c2576164e86
+

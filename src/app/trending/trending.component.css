@@ -1,0 +1,85 @@
+.trending-container {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.trending-header {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trending-header h1 {
+	padding: 20px;
+}
+
+.trending-header a {
+	text-decoration: none;
+	color: steelblue;
+}
+
+.trending-header a:hover {
+	color: blue;
+}
+
+.trending-cards {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.trending-card {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.trending-card-top {
+	min-height: 180px;
+	overflow: hidden;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	/*background-color: rgba(1,1,1,.2);*/
+}
+
+.trending-card-top img {
+	height: 150px;
+	max-width: 250px;
+	padding: 0px;
+	margin: 0px;
+	object-fit: cover;
+	-webkit-transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+}
+
+.tranding-card-top img:hover {
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.trending-card-top h4 {
+	font-weight: 600;
+	font-size: 16px;
+	font-family: arial;
+	opacity: 1;
+}
+
+.trending-card p {
+	font-size: 12px;
+	opacity: .6;
+}
+
+.trending-card a {
+	text-decoration: none;
+	color: orange;
+}
+
+.trending-card a:hover {
+	color: steelblue;
+}
