@@ -12,3 +12,6 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     font-family: mulish-lite;
     src: url(./assets/Mulish/Mulish-VariableFont_wght.ttf);
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

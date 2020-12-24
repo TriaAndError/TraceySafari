@@ -10,13 +10,22 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+import { ZanzibarComponent } from './zanzibar/zanzibar.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     FooterComponent,
-    TrendingComponent
+    TrendingComponent,
+    ZanzibarComponent,
+    AboutUsComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +33,10 @@ import { TrendingComponent } from './trending/trending.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatMenuModule,
+    MatIconModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
