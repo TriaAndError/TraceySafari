@@ -10,6 +10,8 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
+import { TrekkingComponent } from './trekking/trekking.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
@@ -25,7 +27,9 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     TrendingComponent,
     ZanzibarComponent,
     AboutUsComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    TestimonialComponent,
+    TrekkingComponent
   ],
   imports: [
     BrowserModule,
