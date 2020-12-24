@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 
 import { TrendingComponent } from './trending/trending.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { TrekkingComponent } from './trekking/trekking.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     LandingPageComponent,
     FooterComponent,
     TrendingComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    TrekkingComponent
   ],
   imports: [
     BrowserModule,
