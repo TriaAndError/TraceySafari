@@ -11,13 +11,15 @@ import {MatButtonModule} from '@angular/material/button';
 import { FooterComponent } from './footer/footer.component';
 
 import { TrendingComponent } from './trending/trending.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
     FooterComponent,
-    TrendingComponent
+    TrendingComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule,
