@@ -1,9 +1,10 @@
-mat-toolbar {
-  background-color: white
+
+.navbar {
+  width: 80%;
+  margin: auto;
 }
-mat-toolbar-row {
-  height: 110px;
-}
+
+
 .pageLink {
   /*margin-right: 15px;*/
   font-family: Inter, sans-serif;

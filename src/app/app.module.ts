@@ -15,12 +15,11 @@ import { TrekkingComponent } from './trekking/trekking.component';
 
 import { DestinationsComponent } from './destinations/destinations.component';
 import { ExploreComponent } from './explore/explore.component';
-import { SafarisComponent } from './safaris/safaris.component
+import { SafarisComponent } from './safaris/safaris.component';
 
 import {MatMenuModule} from '@angular/material/menu';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
-import { ZanzibarComponent } from './zanzibar/zanzibar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
@@ -30,7 +29,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     LandingPageComponent,
     FooterComponent,
     TrendingComponent,
-    ZanzibarComponent,
     AboutUsComponent,
     ToolbarComponent,
     TestimonialComponent,

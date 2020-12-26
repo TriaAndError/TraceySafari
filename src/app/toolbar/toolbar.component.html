@@ -1,31 +1,80 @@
-<mat-toolbar>
-  <mat-toolbar-row>
-    <span style="flex: 1 1 auto;"></span>
-    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20.5" cy="20.5" r="20.5" fill="#1ABE84"/>
-      <circle cx="20.5" cy="20.5" r="9" fill="#FB8F1D" stroke="white" stroke-width="3"/>
-    </svg>
 
-    <span style="flex: 1 1 auto;"></span>
-    <div  style="margin-right: 50px">
-      <button mat-button class="pageLink" routerLink="/" >Home</button>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/">
+      <span style="flex: 1 1 auto;"></span>
+      <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20.5" cy="20.5" r="20.5" fill="#1ABE84"/>
+        <circle cx="20.5" cy="20.5" r="9" fill="#FB8F1D" stroke="white" stroke-width="3"/>
+      </svg>
 
-      <button mat-button class="pageLink" [matMenuTriggerFor]="safari">Safaris</button>
-      <mat-menu #safari="matMenu" xPosition="before">
-        <button mat-menu-item>National Parks</button>
-        <button mat-menu-item>Packages <span id="itinerary">(itinerary ideas)</span></button>
-      </mat-menu>
-      <button mat-button class="pageLink" [matMenuTriggerFor]="trekking">Trekking</button>
-      <mat-menu #trekking="matMenu" yPosition="below">
-        <button mat-menu-item>Mt. Kilimanjaro</button>
-        <button mat-menu-item>Mt. Meru</button>
-        <button mat-menu-item>Itinerary ideas</button>
-      </mat-menu>
-      <button mat-button class="pageLink" routerLink="/zanzibar">Zanzibar</button>
-      <button mat-button class="pageLink" routerLink="/about">About Us</button>
+      <span style="flex: 1 1 auto;"></span>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" (click)='toggleNav()'>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Safaris
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            National Parks
+          </a>
+          <a class="navbar-item">
+            Packages
+          </a>
+        </div>
+        
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Trekking
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Mt. Kilimanjaro
+          </a>
+          <a class="navbar-item">
+            Mt. Meru
+          </a>
+          <a class="navbar-item">
+            Itinerary Ideas
+          </a>
+        </div>
+      </div>
+
+      <a class="navbar-item" routerLink="/zanzibar">
+        Zanzibar
+      </a>
+
+      <a class="navbar-item" routerLink="/about">
+        About Us
+      </a>
+
     </div>
 
-    <button mat-flat-button class="login_button">Login</button>
-    <button mat-raised-button class="signup_button">Register</button>
-  </mat-toolbar-row>
-</mat-toolbar>
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button mat-flat-button class="login_button">Login</button>
+          <button mat-raised-button class="signup_button">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
