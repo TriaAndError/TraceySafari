@@ -13,6 +13,9 @@ import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { TrekkingComponent } from './trekking/trekking.component';
+import { DestinationsComponent } from './destinations/destinations.component';
+import { ExploreComponent } from './explore/explore.component';
+import { SafarisComponent } from './safaris/safaris.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { TrekkingComponent } from './trekking/trekking.component';
     FooterComponent,
     TrendingComponent,
     TestimonialComponent,
-    TrekkingComponent
+    TrekkingComponent,
+    DestinationsComponent,
+    ExploreComponent,
+    SafarisComponent
   ],
   imports: [
     BrowserModule,
