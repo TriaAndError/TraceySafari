@@ -44,3 +44,9 @@ button.pageLink:hover{
   mix-blend-mode: normal;
 
 }
+mat-icon {
+  margin-bottom: 13px;
+  margin-right: 2px;
+  height: 18px;
+  width: 18px;
+}

@@ -8,21 +8,27 @@
 
     <span style="flex: 1 1 auto;"></span>
     <div  style="margin-right: 50px">
-      <button mat-button class="pageLink" routerLink="/" >Home</button>
+      <button mat-button class="pageLink items-center" routerLink="/" >
+        <mat-icon svgIcon="home"></mat-icon>Home
+      </button>
 
-      <button mat-button class="pageLink" [matMenuTriggerFor]="safari">Safaris</button>
+      <button mat-button class="pageLink" [matMenuTriggerFor]="safari">
+        <mat-icon svgIcon="safari"></mat-icon> Safaris</button>
       <mat-menu #safari="matMenu" xPosition="before">
         <button mat-menu-item>National Parks</button>
         <button mat-menu-item>Packages <span id="itinerary">(itinerary ideas)</span></button>
       </mat-menu>
-      <button mat-button class="pageLink" [matMenuTriggerFor]="trekking">Trekking</button>
+      <button mat-button class="pageLink" [matMenuTriggerFor]="trekking">
+        <mat-icon svgIcon="trekking"></mat-icon> Trekking</button>
       <mat-menu #trekking="matMenu" yPosition="below">
         <button mat-menu-item>Mt. Kilimanjaro</button>
         <button mat-menu-item>Mt. Meru</button>
         <button mat-menu-item>Itinerary ideas</button>
       </mat-menu>
-      <button mat-button class="pageLink" routerLink="/zanzibar">Zanzibar</button>
-      <button mat-button class="pageLink" routerLink="/about">About Us</button>
+      <button mat-button class="pageLink" routerLink="/zanzibar">
+        <mat-icon svgIcon="zanzibar"></mat-icon> Zanzibar</button>
+      <button mat-button class="pageLink" routerLink="/about">
+        <mat-icon svgIcon="about"></mat-icon> About Us</button>
     </div>
 
     <button mat-flat-button class="login_button">Login</button>

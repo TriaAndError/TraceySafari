@@ -18,6 +18,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { ZanzibarComponent } from './zanzibar/zanzibar.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {HttpClientModule} from '@angular/common/http';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     MatButtonModule,
     MatMenuModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatGridListModule,
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
