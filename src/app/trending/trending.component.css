@@ -20,11 +20,14 @@
 
 .trending-header a {
 	text-decoration: none;
-	color: steelblue;
+	color: #FB8F1D;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .trending-header a:hover {
-	color: blue;
+	color: #1ABE84;
 }
 
 .trending-cards {

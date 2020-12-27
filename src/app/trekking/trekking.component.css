@@ -17,7 +17,7 @@
 }
 
 .trekking-header h3 span {
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 }
 
 .trekking-in {
@@ -46,16 +46,12 @@
 	opacity: .6;
 }
 
-.trekking-desc button {
-	width: 200px;
-	padding: 10px;
-	background-color: orange;
-	color: #ffff;
-	font-size: 18px;
-	font-family: mulish;
-	border: 0;
-	border-radius: 10px;
-	box-shadow: 1px 1px 20px #666;
+.viewItineraries {
+  background: #FB8F1D;
+  border-radius: 8px;
+  /*margin-right: 100px;*/
+  width: 120px;
+  /*top: 43px;*/
 }
 
 .trekking-img {

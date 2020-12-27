@@ -1,3 +1,4 @@
+
 .destinations-container {
 	width: 80%;
 	margin: auto;
@@ -20,7 +21,7 @@
 	align-items: center;
 }
 .destinations-header a:hover {
-	color: steelblue;
+	color: #1ABE84;
 }
 
 .destinations-in {
@@ -65,14 +66,16 @@
 	max-width: 200px;
 	left: 0;
 	width: 60%;
-	background-color: rgba(255,255,255,.6);
+	/*background-color: rgba(255,255,255,.6);*/
 	border-top-right-radius: 10px;
+  background-color: white;
 	font-family: mulish-lite;
 }
 
 .h2 {
 	font-size: 14px;
 	padding: 5px;
+  font-weight: bold;
 }
 
 .d-info small {

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatIconRegistry} from '@angular/material/icon';
-import {DomSanitizer} from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-toolbar',
@@ -8,24 +7,17 @@ import {DomSanitizer} from '@angular/platform-browser';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent implements OnInit {
-
-  constructor(iconRegistry: MatIconRegistry,
-              sanitizer: DomSanitizer) {
-    iconRegistry.addSvgIcon('home', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/home-o.svg'));
-    iconRegistry.addSvgIcon('zanzibar', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/beach-trees.svg'));
-    iconRegistry.addSvgIcon('safari', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/destination.svg'));
-    iconRegistry.addSvgIcon('about', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/About.svg'));
-    iconRegistry.addSvgIcon('trekking', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/hiking-filled.svg'));
+isVisible = true;
+  constructor() {
   }
-	toggleNav() {
-	  	var burger = document.querySelector('.burger');
-	  	var nav = document.querySelector('#navbarMenu');
 
+	toggleNav(): void {
+    var burger = document.querySelector('.burger');
+    var nav = document.querySelector('#navbarMenu');
+     this.isVisible = false;
 		burger.classList.toggle('is-active');
 		nav.classList.toggle('is-active');
-	  };
-
-  constructor() { }
+	  }
 
   ngOnInit(): void {
   }

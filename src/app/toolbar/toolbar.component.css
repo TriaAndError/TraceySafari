@@ -4,7 +4,27 @@
   margin: auto;
 }
 
-
+.customIcon {
+  align-items: center;
+  display: inline-flex;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-repeat: no-repeat;
+  /*margin: 0 3px 1px 0;*/
+}
+.zanzibarIcon  {
+  background-image: url('../../assets/icons/beach-trees.svg');
+}
+.trekkingIcon {
+  background-image: url('../../assets/icons/hiking-filled.svg');
+}
+.safarisIcon {
+  background-image: url('../../assets/icons/destination.svg');
+}
+.homeIcon {
+  background-image: url('../../assets/icons/home-o.svg');
+}
 .pageLink {
   /*margin-right: 15px;*/
   font-family: Inter, sans-serif;
@@ -29,6 +49,7 @@ button.pageLink:hover{
 #itinerary {
   color: rgba(130, 130, 130, 1);
   font-size: x-small;
+  margin-left: 3px;
 }
 .login_button {
   border: 1px solid #FB8F1D;

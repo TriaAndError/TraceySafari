@@ -25,6 +25,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import {SafariIllustratorComponent} from './safaris/safariIllustraor';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,8 @@ import {MatCardModule} from '@angular/material/card';
     TrekkingComponent,
     DestinationsComponent,
     ExploreComponent,
-    SafarisComponent
+    SafarisComponent,
+    SafariIllustratorComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +55,8 @@ import {MatCardModule} from '@angular/material/card';
     MatFormFieldModule,
     MatGridListModule,
     HttpClientModule,
-    MatCardModule
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

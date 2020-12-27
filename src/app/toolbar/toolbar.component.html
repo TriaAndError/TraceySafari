@@ -1,5 +1,5 @@
 
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="width: 100%">
   <div class="navbar-brand">
     <a class="navbar-item" routerLink="/">
       <span style="flex: 1 1 auto;"></span>
@@ -17,38 +17,17 @@
       <span aria-hidden="true"></span>
     </a>
   </div>
-    <span style="flex: 1 1 auto;"></span>
-    <div  style="margin-right: 50px">
-      <button mat-button class="pageLink items-center" routerLink="/" >
-        <mat-icon svgIcon="home"></mat-icon>Home
-      </button>
-
-      <button mat-button class="pageLink" [matMenuTriggerFor]="safari">
-        <mat-icon svgIcon="safari"></mat-icon> Safaris</button>
-      <mat-menu #safari="matMenu" xPosition="before">
-        <button mat-menu-item>National Parks</button>
-        <button mat-menu-item>Packages <span id="itinerary">(itinerary ideas)</span></button>
-      </mat-menu>
-      <button mat-button class="pageLink" [matMenuTriggerFor]="trekking">
-        <mat-icon svgIcon="trekking"></mat-icon> Trekking</button>
-      <mat-menu #trekking="matMenu" yPosition="below">
-        <button mat-menu-item>Mt. Kilimanjaro</button>
-        <button mat-menu-item>Mt. Meru</button>
-        <button mat-menu-item>Itinerary ideas</button>
-      </mat-menu>
-      <button mat-button class="pageLink" routerLink="/zanzibar">
-        <mat-icon svgIcon="zanzibar"></mat-icon> Zanzibar</button>
-      <button mat-button class="pageLink" routerLink="/about">
-        <mat-icon svgIcon="about"></mat-icon> About Us</button>
-    </div>
+  <span style="flex: 1 1 auto;"></span>
   <div id="navbarMenu" class="navbar-menu">
-    <div class="navbar-start">
-      <a class="navbar-item">
+    <div class="navbar-end">
+      <a class="navbar-item" routerLink="/">
+        <i *ngIf="isVisible" class="homeIcon customIcon"></i>
         Home
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
+          <i *ngIf="isVisible" class="customIcon safarisIcon"></i>
           Safaris
         </a>
 
@@ -57,7 +36,7 @@
             National Parks
           </a>
           <a class="navbar-item">
-            Packages
+            Packages   <span id="itinerary">(itinerary ideas)</span>
           </a>
         </div>
 
@@ -65,6 +44,7 @@
 
       <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
+          <i *ngIf="isVisible" class="customIcon trekkingIcon"></i>
           Trekking
         </a>
 
@@ -82,13 +62,18 @@
       </div>
 
       <a class="navbar-item" routerLink="/zanzibar">
+
+        <i *ngIf="isVisible" class="zanzibarIcon customIcon"></i>
+
         Zanzibar
       </a>
 
       <a class="navbar-item" routerLink="/about">
+        <span *ngIf="isVisible" class="icon has-text-info">
+         <i  class="fas fa-info-circle" style="margin: 0 3px 1px 0 "></i>
+            </span>
         About Us
       </a>
-
     </div>
 
     <div class="navbar-end">
