@@ -1,11 +1,22 @@
-<mat-toolbar>
-  <mat-toolbar-row>
-    <span style="flex: 1 1 auto;"></span>
-    <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="20.5" cy="20.5" r="20.5" fill="#1ABE84"/>
-      <circle cx="20.5" cy="20.5" r="9" fill="#FB8F1D" stroke="white" stroke-width="3"/>
-    </svg>
 
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/">
+      <span style="flex: 1 1 auto;"></span>
+      <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20.5" cy="20.5" r="20.5" fill="#1ABE84"/>
+        <circle cx="20.5" cy="20.5" r="9" fill="#FB8F1D" stroke="white" stroke-width="3"/>
+      </svg>
+
+      <span style="flex: 1 1 auto;"></span>
+    </a>
+
+    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" (click)='toggleNav()'>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
     <span style="flex: 1 1 auto;"></span>
     <div  style="margin-right: 50px">
       <button mat-button class="pageLink items-center" routerLink="/" >
@@ -30,8 +41,63 @@
       <button mat-button class="pageLink" routerLink="/about">
         <mat-icon svgIcon="about"></mat-icon> About Us</button>
     </div>
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item">
+        Home
+      </a>
 
-    <button mat-flat-button class="login_button">Login</button>
-    <button mat-raised-button class="signup_button">Register</button>
-  </mat-toolbar-row>
-</mat-toolbar>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Safaris
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            National Parks
+          </a>
+          <a class="navbar-item">
+            Packages
+          </a>
+        </div>
+
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Trekking
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item">
+            Mt. Kilimanjaro
+          </a>
+          <a class="navbar-item">
+            Mt. Meru
+          </a>
+          <a class="navbar-item">
+            Itinerary Ideas
+          </a>
+        </div>
+      </div>
+
+      <a class="navbar-item" routerLink="/zanzibar">
+        Zanzibar
+      </a>
+
+      <a class="navbar-item" routerLink="/about">
+        About Us
+      </a>
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <button mat-flat-button class="login_button">Login</button>
+          <button mat-raised-button class="signup_button">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

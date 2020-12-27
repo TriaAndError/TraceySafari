@@ -17,6 +17,15 @@ export class ToolbarComponent implements OnInit {
     iconRegistry.addSvgIcon('about', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/About.svg'));
     iconRegistry.addSvgIcon('trekking', sanitizer.bypassSecurityTrustResourceUrl('../assets/icons/hiking-filled.svg'));
   }
+	toggleNav() {
+	  	var burger = document.querySelector('.burger');
+	  	var nav = document.querySelector('#navbarMenu');
+
+		burger.classList.toggle('is-active');
+		nav.classList.toggle('is-active');
+	  };
+
+  constructor() { }
 
   ngOnInit(): void {
   }

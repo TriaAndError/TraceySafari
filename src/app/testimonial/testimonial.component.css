@@ -7,7 +7,8 @@
 }
 
 .testimonials {
-	display: flex;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 	padding: 0px 20px;
 	width: 100%;
 	justify-content: space-around;
@@ -25,7 +26,7 @@
 .testimonial-desc {
 	display: flex;
 	flex-direction: column;
-	max-width:40%;
+	width: 100%;
 }
 
 .testimonial-desc p {
@@ -41,33 +42,45 @@
 .testimonial-desc small {
 	font-size: 14px;
 	font-family: mulish-lite;
+	margin-bottom: 20px;
 }
 
 .testimonial-img {
 	display: flex;
 	flex-direction: column;
-	max-width: 250px;
-	position: relative;
+	width: 100%;
 	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.i-card {
+	max-width: 200px;
+	position: relative;
+	height: 250px;
 	border-radius: 10px;
 	overflow: hidden;
 }
 
 .testimonial-img img {
 	object-fit: cover;
+	max-width: 100%;
+	height: 100%;
 }
 
 .t-controls {
 	position: absolute;
+	display: flex;
+	z-index: 1;
 	bottom: 0;
 	right: 0;
 	border-top-left-radius: 10px;
-	width: fit-content;
-	height: fit-content;
 	background-color: rgba(255,255,255,.9);
 }
 
 .t-controls svg {
 	cursor: pointer;
-	padding: 15px;
+	padding: 10px;
+	width: 100%;
+	height: 100%;
 }

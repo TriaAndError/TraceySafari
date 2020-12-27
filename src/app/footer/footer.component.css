@@ -10,9 +10,10 @@
 }
 
 .footer-top {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     width: 80%;
-    height:  300px;
+    min-height:  300px;
     margin: auto;
     padding: 10px;
     border-bottom: 1px solid rgba(1,1,1,.1);
@@ -36,7 +37,7 @@
 }
 
 .footer-col1 {
-    width: 30%;
+
     padding: 20px;
     height: auto;
     display: flex;
@@ -57,6 +58,7 @@
 .footer-col3, 
 .footer-col4 {
     padding: 20px;
+
 } 
 
 .footer-col1 p,
@@ -82,13 +84,11 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    height: 50px;
 }
 
 .footer-social svg {
     padding: 0px 20px;
-    width: 22px;
-    height: 22px;
+    width: 100%;
     opacity: .5;
 }
 
