@@ -14,7 +14,7 @@ isVisible = true;
 	toggleNav(): void {
     var burger = document.querySelector('.burger');
     var nav = document.querySelector('#navbarMenu');
-     this.isVisible = false;
+     	this.isVisible = false;
 		burger.classList.toggle('is-active');
 		nav.classList.toggle('is-active');
 	  }

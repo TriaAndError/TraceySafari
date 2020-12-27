@@ -21,12 +21,30 @@
 .trending-header a {
 	text-decoration: none;
 	color: #FB8F1D;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
 .trending-header a:hover {
+	color: #1ABE84;
+}
+
+.bottom-trending-header {
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom-trending-header a {
+	text-decoration: none;
+	color: #FB8F1D;
+	padding: 20px;
+	font-size: 18px;
+
+}
+
+.bottom-trending-header a:hover {
 	color: #1ABE84;
 }
 
@@ -101,4 +119,16 @@
 
 .trending-card a:hover {
 	color: steelblue;
+}
+
+@media (max-width: 820px) {
+
+	.bottom-trending-header {
+		display: flex;
+	}
+
+	.trending-header a {
+		display: none;
+	}
+
 }
