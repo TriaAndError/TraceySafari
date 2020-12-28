@@ -53,29 +53,29 @@
     margin-bottom: 50px;
     opacity: .6;
 }
- 
-.footer-col2, 
-.footer-col3, 
+
+.footer-col2,
+.footer-col3,
 .footer-col4 {
     padding: 20px;
 
-} 
+}
 
 .footer-col1 p,
-.footer-col2 p, 
-.footer-col3 p, 
+.footer-col2 p,
+.footer-col3 p,
 .footer-col4 p {
     font-family: mulish-lite;
     font-size: 14px;
-} 
+}
 
-.footer-col2 p, 
-.footer-col3 p, 
+.footer-col2 p,
+.footer-col3 p,
 .footer-col4 p {
     font-family: mulish-lite;
     font-size: 14px;
     line-height: 2;
-} 
+}
 
 .footer-social {
     width: 80%;
