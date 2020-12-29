@@ -3,6 +3,7 @@
 	margin: auto;
 	display: flex;
 	flex-direction: column;
+	padding: 20px 0px;
 }
 
 .trekking-header {
@@ -54,9 +55,8 @@
   /*top: 43px;*/
 }
 
-.trekking-img {
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
+.trekking-img svg {
+	max-width:100%;
+	height: 100%;
 }
 

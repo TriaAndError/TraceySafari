@@ -2,7 +2,7 @@
 	width: 80%;
 	margin: auto;
 	display: flex;
-	margin-bottom: 50px;
+	padding: 20px 0px;
 	flex-direction: column;
 }
 
@@ -23,8 +23,9 @@
 
 .safaris-in {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
 	justify-content: space-between;
 	align-items: center;
 }
@@ -61,5 +62,13 @@
 }
 
 .safaris-img svg {
+
+}
+
+@media (max-width: 820px) {
+
+.safaris-desc {
+	grid-row: 1/2;
+}
 
 }
