@@ -27,6 +27,9 @@ import {HttpClientModule} from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {SafariIllustratorComponent} from './safaris/safariIllustraor';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import {MatInputModule} from '@angular/material/input';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,9 @@ import {SafariIllustratorComponent} from './safaris/safariIllustraor';
     DestinationsComponent,
     ExploreComponent,
     SafarisComponent,
-    SafariIllustratorComponent
+    SafariIllustratorComponent,
+    ContactUsComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,8 @@ import {SafariIllustratorComponent} from './safaris/safariIllustraor';
     MatGridListModule,
     HttpClientModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,8 +17,9 @@
 	font-family: mulish-lite;
 }
 
-.safaris-header h3 span {
+.safaris-header h3 span svg {
 	/*text-decoration: underline;*/
+  justify-self: start;
 }
 
 .safaris-in {
