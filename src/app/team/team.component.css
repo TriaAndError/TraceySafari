@@ -1,0 +1,26 @@
+.teamProfileContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+
+}
+.teamProfileItems {
+  width: 100%;
+display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamProfileItems svg {
+  margin-top: 25px;
+}
+.teamProfileItems h2 {
+  font-family: mulish, serif
+}
+.teamProfileHeader {
+  align-items: start
+}
+.teamProfileHeader h1 {
+  font-family: mulish, serif;
+  margin: 0px;
+}
