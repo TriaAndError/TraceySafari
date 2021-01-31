@@ -34,6 +34,10 @@ import { TeamComponent } from './team/team.component';
 
 import { OwlModule } from 'ngx-owl-carousel';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ParkComponent } from './park/park.component';
+import { CarouselComponent } from './carousel/carousel.component';
+import { CardComponent } from './card/card.component';
+import { ListCardsComponent } from './list-cards/list-cards.component';
 
 @NgModule({
   declarations: [
@@ -52,6 +56,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ContactUsComponent,
     TeamComponent,
     ZanzibarComponent,
+    ParkComponent,
+    CarouselComponent,
+    CardComponent,
+    ListCardsComponent,
   ],
   imports: [
     BrowserModule,

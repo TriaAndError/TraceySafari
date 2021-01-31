@@ -17,12 +17,14 @@
      .top {
          min-height: 40vh;
          display: grid;
-         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-         justify-content: center;
+         width: 80%;
+         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+         justify-content: space-between;
          align-items: center;
-         grid-column-gap: 1em;
+         grid-column-gap: 2em;
+         grid-row-gap: 2em;
          padding: 20px;
-         margin: 40px 0px;
+         margin: 40px auto;
      }
 
      .top div {
@@ -31,15 +33,44 @@
          justify-content: center;
          align-items: center;
      }
-
+     p {
+       font-weight: 100;
+       margin: 10px;
+     }
      .top-text {
          font-family: mulish-lite;
-         font-size: 18px;
+         font-size: 20px;
+         font-weight: 100;
+        width: 80%;
          opacity: .7;
-         line-height: 2px;
+         line-height: 30px;
+         margin: 100px auto;
+         /* height: 30vh; */
      }
 
-     .under-button {
+     .more {
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+     }
+
+     .more a {
+       text-decoration: none;
+       display: flex;
+       font-size: 18px;
+       justify-content: center;
+       align-items: center;
+     }
+
+     .more a svg {
+       margin-left: 10px;
+     }
+
+     /* .under-button {
          height: 40vh;
          width: 100%;
          display: grid;
@@ -55,90 +86,4 @@
          background-color: #FB8F1D;
          color: white;
          font-size: 24px;
-     }
-
-     owl-carousel-o {
-         position: relative;
-         height: 100vh;
-         width: 100%;
-         top: 0;
-         left: 0;
-     }
-
-     .owl-prev,
-     .owl-next {
-         width: 15px;
-         height: 100px;
-         position: absolute;
-         top: 50%;
-         transform: translateY(-50%);
-         display: block !important;
-         border: 0px solid black;
-     }
-
-     .owl-prev {
-         position: absolute;
-         left: -20px;
-     }
-
-     .owl-next {
-         right: -20px;
-     }
-
-     .owl-item {
-         height: 100vh;
-         width: 100%;
-         background-repeat: no-repeat;
-         background-size: cover;
-         background-position: 50% 50%;
-     }
-
-     img {
-         width: 100%;
-         height: auto;
-         max-width: 99vh;
-     }
-     /* Feel free to change duration  */
-
-     .animated {
-         -webkit-animation-duration: 1000 ms;
-         animation-duration: 1000 ms;
-         -webkit-animation-fill-mode: both;
-         animation-fill-mode: both;
-     }
-     /* .owl-animated-out - only for current item */
-     /* This is very important class. Use z-index if you want move Out item above In item */
-
-     .owl-animated-out {
-         z-index: 1
-     }
-     /* .owl-animated-in - only for upcoming item
-/* This is very important class. Use z-index if you want move In item above Out item */
-
-     .owl-animated-in {
-         z-index: 0
-     }
-     /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */
-
-     .fadeOut {
-         -webkit-animation-name: fadeOut;
-         animation-name: fadeOut;
-     }
-
-     @-webkit-keyframes fadeOut {
-         0% {
-             opacity: 1;
-         }
-         100% {
-             opacity: 0;
-         }
-     }
-
-     @keyframes fadeOut {
-         0% {
-             opacity: 1;
-         }
-         100% {
-             opacity: 0;
-         }
-     }
+     } */

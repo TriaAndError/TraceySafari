@@ -22,51 +22,43 @@
         </div>
 
         <div class='top-text'>
-            The spice island of Zanzibar with its interesting history influenced by early Arab traders offers beautiful beaches at the Indian Ocean and beach hotels of all standards. Consisting of the main islands Unguja and Pemba as well as of several smaller untouched
+            <p>The spice island of Zanzibar with its interesting history influenced by early Arab traders offers beautiful beaches at the Indian Ocean and beach hotels of all standards. Consisting of the main islands Unguja and Pemba as well as of several smaller untouched
             islands, the Zanzibar Archipelago features gorgeous, palm-fringed white sandy beaches that stretch into the warm turquoise waters and invite visitors to unwind and soak up the sun. The capital of Zanzibar City with its old historic center
-            of Stone Town, Its eventful history of some slave and exotic trade still shows traces everywhere.
+            of Stone Town, Its eventful history of some slave and exotic trade still shows traces everywhere.</p>
             <br>
-            <br> Magnificent Sultan’s palaces and grand Arab houses, winding alleys and bustling bazaars give visitors the feeling of being immersed in the world of Sindbad and Alibaba. The east coast of Zanzibar is very popular amongst visitors seeking
+            <br>
+            <p>Magnificent Sultan’s palaces and grand Arab houses, winding alleys and bustling bazaars give visitors the feeling of being immersed in the world of Sindbad and Alibaba. The east coast of Zanzibar is very popular amongst visitors seeking
             beautiful beaches and tranquility and it is just like a tropical paradise with its miles of palm-fringed beaches. Compared to other regions of the island, the coral reef on the east coast is at its furthest distance from the shore and swimming
-            is only possible during high tide.
+            is only possible during high tide.</p>
         </div>
 
-        <owl-carousel-o [options]="slider">
-            <ng-template carouselSlide>
-                <div class="slide">
-                    <img src="../../assets/img/zanzibar1.jpg" alt="img 1">
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="slide">
-                    <img src="../../assets/img/zanzibar2.jpg" alt="img 1">
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="slide">
-                    <img src="../../assets/img/zanzibar3.jpg" alt="img 1">
-                </div>
-            </ng-template>
-            <ng-template carouselSlide>
-                <div class="slide">
-                    <img src="../../assets/img/zanzibar3.jpg" alt="img 1">
-                </div>
-            </ng-template>
-        </owl-carousel-o>
+        <div class="top-text">
+          Zanzibar WonderLands <br>
+          <svg width="169" height="6" viewBox="0 0 169 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.985119" y1="3.50004" x2="168.985" y2="2.50004" stroke="black" stroke-width="5"/>
+          </svg>
+        </div>
 
-        <!-- <div class="large-pics"> -->
-        <!-- <owl-carousel [options]="slider" [carouselClasses]="['owl-theme','customClass']">
-            <div class="item">
-                <img src="../../assets/img/zanzibar1.jpg" alt="" />
-            </div>
-        </owl-carousel> -->
-        <!-- </div> -->
+        <div class="top">
+          <app-card [title]="data[0]['title']" [imgs]="data[0]['imgs']" [text]="data[0]['description']"></app-card>
+          <app-card [title]="data[1]['title']" [imgs]="data[1]['imgs']" [text]="data[1]['description']"></app-card>
+        </div>
 
-        <div class="under-button">
+        <div class="more">
+          <a href="">
+            View more
+            <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 12.75L21.2975 12.75L15.0325 19.0325L17.5 21.5L28 11L17.5 0.5L15.0325 2.9675L21.2975 9.25L3.0598e-07 9.25L0 12.75Z" fill="#2E3A59"/>
+              </svg>
+
+          </a>
+        </div>
+
+        <!-- <div class="under-button">
             <button mat-raised-button>
               BOOK NOW
             </button>
-        </div>
+        </div> -->
     </div>
     <app-footer></app-footer>
 </div>

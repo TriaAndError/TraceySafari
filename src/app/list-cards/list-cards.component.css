@@ -1,0 +1,8 @@
+app-toolbar {
+  height: 8vh;
+}
+
+.wrapper {
+  top: 8vh;
+  overflow: auto;
+}

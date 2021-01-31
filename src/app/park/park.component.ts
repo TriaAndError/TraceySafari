@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
-  selector: 'app-zanzibar',
-  templateUrl: './zanzibar.component.html',
-  styleUrls: ['./zanzibar.component.css'],
+  selector: 'app-park',
+  templateUrl: './park.component.html',
+  styleUrls: ['./park.component.css']
 })
-export class ZanzibarComponent implements OnInit {
+export class ParkComponent implements OnInit {
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
-
+  ngOnInit(): void {
+  }
   slider: OwlOptions = {
     items: 1,
     loop: true,
@@ -44,24 +44,26 @@ export class ZanzibarComponent implements OnInit {
 
   data: any[] = [
     {
-      title: "Beach",
+      title: "Park 1",
       description: "Warm breeze of the sea is beautifull",
       imgs: ["../../assets/img/zanzibar1.jpg", "../../assets/img/zanzibar3.jpg"]
     },
     {
-      title: "Makumbusho",
+      title: "Park 2",
       description: "The past is beatifull",
       imgs: ["../../assets/img/zanzibar2.jpg", "../../assets/img/zanzibar3.jpg"]
     },
     {
-      title: "The Culture",
+      title: "Park 3",
       description: "The people are cool",
       imgs: ["../../assets/img/zanzibar1.jpg", "../../assets/img/zanzibar2.jpg"]
     },
     {
-      title: "Their History",
+      title: "Park 4",
       description: "The past is beatifull and personal",
       imgs: ["../../assets/img/zanzibar3.jpg", "../../assets/img/zanzibar2.jpg"]
     }
   ]
+
+
 }
