@@ -1,27 +1,44 @@
  /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
+ html,
+ body {
+     height: 100%;
+ }
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ body {
+     margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
 
-@font-face {
-    font-family: mulish;
-    src: url(./assets/Mulish/static/Mulish-Black.ttf);
-}
+ @font-face {
+     font-family: mulish;
+     src: url(./assets/Mulish/static/Mulish-Black.ttf);
+ }
 
-@font-face {
-    font-family: mulish-lite;
-    src: url(./assets/Mulish/Mulish-VariableFont_wght.ttf);
-}
+ @font-face {
+     font-family: mulish-lite;
+     src: url(./assets/Mulish/Mulish-VariableFont_wght.ttf);
+ }
 
-html, body { height: 100%; }
-body { 
-		margin: 0;
-		padding: 0;
-		font-family: mulish-lite; 
-		position: relative; 
-		box-sizing: border-box;
-	}
+ html,
+ body {
+     height: 100%;
+ }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+ body {
+     margin: 0;
+     padding: 0;
+     font-family: mulish-lite;
+     position: relative;
+     box-sizing: border-box;
+ }
+
+ html,
+ body {
+     height: 100%;
+ }
+
+ body {
+     margin: 0;
+     font-family: Roboto, "Helvetica Neue", sans-serif;
+ }

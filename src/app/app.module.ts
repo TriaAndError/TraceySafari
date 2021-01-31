@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TrendingComponent } from './trending/trending.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { TrekkingComponent } from './trekking/trekking.component';
+import { ZanzibarComponent } from './zanzibar/zanzibar.component';
 
 import { DestinationsComponent } from './destinations/destinations.component';
 import { ExploreComponent } from './explore/explore.component';
@@ -31,6 +32,9 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import {MatInputModule} from '@angular/material/input';
 import { TeamComponent } from './team/team.component';
 
+import { OwlModule } from 'ngx-owl-carousel';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,7 +50,8 @@ import { TeamComponent } from './team/team.component';
     SafarisComponent,
     SafariIllustratorComponent,
     ContactUsComponent,
-    TeamComponent
+    TeamComponent,
+    ZanzibarComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,12 +64,14 @@ import { TeamComponent } from './team/team.component';
     MatIconModule,
     MatFormFieldModule,
     MatGridListModule,
+    OwlModule,
+    CarouselModule,
     HttpClientModule,
     MatCardModule,
     MatDividerModule,
-    MatInputModule
+    MatInputModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
