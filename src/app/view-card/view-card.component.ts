@@ -21,8 +21,6 @@ export class ViewCardComponent implements OnInit {
 
     if (data) {
 
-      if (localStorage.getItem('title') !== data['title']) {
-
       var title = data['title'];
       var text = data['text'];
       var imgs = data['imgs'];
@@ -30,6 +28,7 @@ export class ViewCardComponent implements OnInit {
       this.title = data['title'];
       this.text = data['text'];
       this.imgs = data['imgs'];
+      if (localStorage.getItem('title') !== data['title']) {
 
       localStorage.setItem('title', title);
       localStorage.setItem('text', text);

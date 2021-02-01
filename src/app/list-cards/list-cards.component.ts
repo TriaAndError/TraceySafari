@@ -22,9 +22,10 @@ export class ListCardsComponent implements OnInit {
 
     if (real) {
 
+      this.content = real;
+      this.title = cont['title'];
+
       if (localStorage.getItem('mainTitle') !== cont['title']) {
-        this.content = real;
-        this.title = cont['title'];
 
         localStorage.setItem('mainTitle', cont['title']);
         localStorage.setItem('theList', JSON.stringify(real));
