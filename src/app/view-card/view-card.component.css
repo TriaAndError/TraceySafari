@@ -20,6 +20,10 @@ app-toolbar {
   margin: 40px auto;
 }
 
+app-carousel {
+  width: 100%;
+}
+
 .top-text {
   font-family: mulish-lite;
   font-size: 20px;
@@ -29,4 +33,22 @@ app-toolbar {
   line-height: 30px;
   margin: 100px auto;
   /* height: 30vh; */
+}
+
+.under-button {
+  height: 40vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  justify-content: center;
+  align-items: center;
+}
+
+.under-button button {
+  width: 70%;
+  margin: auto;
+  height: 50px;
+  background-color: #FB8F1D;
+  color: white;
+  font-size: 24px;
 }

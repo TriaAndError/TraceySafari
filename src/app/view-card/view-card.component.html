@@ -1,0 +1,23 @@
+<app-toolbar></app-toolbar>
+
+  <div class="wrapper">
+    <div class="top-text">
+      <mat-card-title>
+        {{title}}
+      </mat-card-title>
+    </div>
+    <div class="top-text">
+      <p>
+        {{text}}
+      </p>
+    </div>
+    <div class="top">
+      <app-carousel [imgs] = 'imgs'></app-carousel>
+    </div>
+    <div class="under-button">
+      <button mat-raised-button>
+        BOOK NOW
+      </button>
+  </div>
+    <app-footer></app-footer>
+  </div>

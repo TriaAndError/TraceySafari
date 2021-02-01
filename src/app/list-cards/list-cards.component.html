@@ -1,7 +1,14 @@
 <app-toolbar></app-toolbar>
 
 <div class="wrapper">
+  <div class="top-text">
+    {{title}}
+  </div>
+  <div class="top">
 
+    <app-card *ngFor="let data of content" [title]="data['title']" [imgs]="data['imgs']" [text]="data['description']"></app-card>
+
+  </div>
 
   <app-footer></app-footer>
 </div>

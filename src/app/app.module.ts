@@ -38,6 +38,7 @@ import { ParkComponent } from './park/park.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
 import { ListCardsComponent } from './list-cards/list-cards.component';
+import { ViewCardComponent } from './view-card/view-card.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { ListCardsComponent } from './list-cards/list-cards.component';
     CarouselComponent,
     CardComponent,
     ListCardsComponent,
+    ViewCardComponent,
   ],
   imports: [
     BrowserModule,
