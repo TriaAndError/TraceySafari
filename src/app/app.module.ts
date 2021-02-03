@@ -39,6 +39,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { CardComponent } from './card/card.component';
 import { ListCardsComponent } from './list-cards/list-cards.component';
 import { ViewCardComponent } from './view-card/view-card.component';
+import { KilimanjaroComponent } from './kilimanjaro/kilimanjaro.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ViewCardComponent } from './view-card/view-card.component';
     CardComponent,
     ListCardsComponent,
     ViewCardComponent,
+    KilimanjaroComponent,
   ],
   imports: [
     BrowserModule,

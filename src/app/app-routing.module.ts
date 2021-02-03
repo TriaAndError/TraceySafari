@@ -7,6 +7,7 @@ import {AboutUsComponent} from './about-us/about-us.component';
 import { ZanzibarComponent } from './zanzibar/zanzibar.component';
 import { ParkComponent } from './park/park.component';
 import { ListCardsComponent } from './list-cards/list-cards.component';
+import { KilimanjaroComponent } from './kilimanjaro/kilimanjaro.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'zanzibar', component: ZanzibarComponent },
   { path: 'park', component: ParkComponent},
   { path: 'list-cards', component: ListCardsComponent},
-  {path: 'view-card', component: ViewCardComponent}
+  {path: 'view-card', component: ViewCardComponent},
+  {path: 'kilimanjaro', component: KilimanjaroComponent},
 ];
 
 
